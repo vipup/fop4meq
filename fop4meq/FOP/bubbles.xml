@@ -1,0 +1,27 @@
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html -->
+<fo:block>
+	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg">
+		<svg:svg height="15" width="210">
+			<svg:circle cx="{20 + @Value  * 20 }" cy="5" r="5" stroke="grey"
+				stroke-width="1" fill="black" />
+			<text x="{2 + @Value  * 20 }" y="5"  >
+				1
+			</text>				
+			Sorry, your browser does not support inline SVG.
+
+			<svg:rect y="0" x="0" height="32" width="1" id="rect5011"
+				style="fill:#333333;stroke:#FFFFFF;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />
+			<svg:rect y="0" x="30" height="32" width="1" id="rect5012"
+				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />
+			<svg:rect y="0" x="50" height="32" width="1" id="rect5013"
+				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />
+			<svg:rect y="0" x="70" height="32" width="1" id="rect5014"
+				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />
+			<svg:rect y="0" x="90" height="32" width="1" id="rect5015"
+				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />
+			<svg:rect y="0" x="110" height="32" width="1" id="rect5016"
+				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />
+
+		</svg:svg>
+	</fo:instream-foreign-object>
+</fo:block>  
