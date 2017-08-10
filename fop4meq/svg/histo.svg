@@ -1,26 +1,32 @@
+
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com"
 	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-	width="800" height="63">
-	<g transform="scale(0.700)">
+	width="800" 
+	height="63" 
+	>
+	<xsl:variable name="$w0000005" select="666"/>
+  	<xsl:variable name="$w0000004" select="259"/>
+  	<xsl:variable name="$w0000003" select="111"/> 
+  	 
+  	<g transform="scale(0.700)">
 		<svg x="0" y="30">
 			<rect fill="#dadada" stroke="#222222" stroke-width="2"
 				stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" id="GREY_BACK"
-				x="001" y="010" width="666" height="30" style="color: rgb(0, 0, 0);"
+				x="001" y="010" width="{$w0000005}" height="30" style="color: rgb(0, 0, 0);"
 				class="" />
 			<rect fill="#e84141" stroke="#222222" stroke-width="2"
 				stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" id="RED_"
-				x="001" y="010" width="259" height="30" style="color: rgb(0, 0, 0);"
+				x="001" y="010" width="{$w0000004}" height="30" style="color: rgb(0, 0, 0);"
 				class="" />
 			<rect fill="#04b804" stroke="#222222" stroke-width="2"
 				stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" id="GREEN_"
-				x="001" y="010"
-				width="{ 1 * ( /Survey/Group[@GroupType='33']/Formula/FormulaResult/@Value)  /  ( /Survey/Group[@GroupType='33']/@MaxValue )  }"
+				x="001" y="010" width="{$w0000003}"
 				height="30" style="color: rgb(0, 0, 0);" class="" />
 			<rect fill="#242424" stroke="#222222" stroke-width="2"
 				stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero"
-				id="BLACK_VERTICAL" x="168" y="0" width="4" height="50"
+				id="BLACK_VERTICAL" x="{$w0000003}" y="0" width="4" height="50"
 				style="color: rgb(0, 0, 0);" />
 		</svg>
 		<svg x="0" y="25">
@@ -28,24 +34,21 @@
 				<text x="4" y="13">
 					GREEN WIDTH
 					<xsl:value-of
-						select="  1 * ( /Survey/Group[@GroupType='33']/Formula/FormulaResult/@Value)  /  ( /Survey/Group[@GroupType='33']/@MaxValue )   " />
+						select="  1 * (  ./Formula/FormulaResult/@Value)  /  (  @MaxValue )   " />
 				</text>
 
-				<text x="476" y="60">
-					Max
-					<xsl:value-of select="/Survey/Group[@GroupType='33']/@MaxValue" />
+				<text x="{$w0000005}" y="60">
+					Max${XSLVAL.0000005} 
+					<xsl:value-of select="./@MaxValue" />
 				</text>
 				<text x="0" y="60">
-					Min
-					<xsl:value-of select="/Survey/Group[@GroupType='33']/Formula/@MinValue" />
+					Min${XSLVAL.0000001} 
 				</text>
-				<text x="185" y="60">
-					Cutoff
-					<xsl:value-of select="/Survey/Group[@GroupType='33']/Formula/@Threshold" />
+				<text x="{$w0000003}" y="60">
+					Cutoff  ${XSLVAL.0000003}
 				</text>
-				<text x="255" y="12">
-					<xsl:value-of
-						select="/Survey/Group[@GroupType='33']/Formula/FormulaResult/@Value" />
+				<text x="{$w0000004}" y="12">
+					${XSLVAL.0000004}
 				</text>
 			</g>
 		</svg>
