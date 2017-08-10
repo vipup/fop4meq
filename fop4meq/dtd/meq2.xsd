@@ -1,0 +1,163 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Survey">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="CompnayLogo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="BitmapByteArray"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Group" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ForegroundColor">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="Web" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GradientColor1">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="Web" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="GradientColor2">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="Web" use="optional"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Question" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Answer" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="UserInput" use="optional"/>
+                            <xs:attribute type="xs:float" name="Value" use="optional"/>
+                            <xs:attribute type="xs:byte" name="Count" use="optional"/>
+                            <xs:attribute type="xs:string" name="Text" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="Title" use="optional"/>
+                  <xs:attribute type="xs:short" name="QuestionID" use="optional"/>
+                  <xs:attribute type="xs:string" name="ChartType" use="optional"/>
+                  <xs:attribute type="xs:string" name="PercentYScale" use="optional"/>
+                  <xs:attribute type="xs:string" name="Visibility" use="optional"/>
+                  <xs:attribute type="xs:byte" name="AnsweredCount" use="optional"/>
+                  <xs:attribute type="xs:byte" name="UnansweredCount" use="optional"/>
+                  <xs:attribute type="xs:byte" name="SkippedCount" use="optional"/>
+                  <xs:attribute type="xs:string" name="ExtraAtributes" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Formula" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ForegroundColor">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Web" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GradientColor1">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Web" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="GradientColor2">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Web" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="FormulaResult">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:string">
+                            <xs:attribute type="xs:string" name="Text" use="optional"/>
+                            <xs:attribute type="xs:float" name="Value" use="optional"/>
+                            <xs:attribute type="xs:int" name="ResultID" use="optional"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="Title" use="optional"/>
+                  <xs:attribute type="xs:string" name="ChartType" use="optional"/>
+                  <xs:attribute type="xs:float" name="MinValue" use="optional"/>
+                  <xs:attribute type="xs:float" name="MaxValue" use="optional"/>
+                  <xs:attribute type="xs:byte" name="Decimals" use="optional"/>
+                  <xs:attribute type="xs:byte" name="Threshold" use="optional"/>
+                  <xs:attribute type="xs:string" name="Legend" use="optional"/>
+                  <xs:attribute type="xs:string" name="Visibility" use="optional"/>
+                  <xs:attribute type="xs:string" name="ExtraAtributes" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="Title" use="optional"/>
+            <xs:attribute type="xs:byte" name="GroupID" use="optional"/>
+            <xs:attribute type="xs:byte" name="GroupType" use="optional"/>
+            <xs:attribute type="xs:byte" name="Decimals" use="optional"/>
+            <xs:attribute type="xs:string" name="Threshold" use="optional"/>
+            <xs:attribute type="xs:float" name="MinValue" use="optional"/>
+            <xs:attribute type="xs:float" name="MaxValue" use="optional"/>
+            <xs:attribute type="xs:string" name="ExtraAtributes" use="optional"/>
+            <xs:attribute type="xs:string" name="SplitGroup" use="optional"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Respondent">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:short" name="ID"/>
+                <xs:attribute type="xs:string" name="HISID"/>
+                <xs:attribute type="xs:byte" name="Code"/>
+                <xs:attribute type="xs:string" name="LastName"/>
+                <xs:attribute type="xs:string" name="FirstName"/>
+                <xs:attribute type="xs:string" name="Sex"/>
+                <xs:attribute type="xs:string" name="RFID"/>
+                <xs:attribute type="xs:string" name="EMAIL"/>
+                <xs:attribute type="xs:string" name="PLC"/>
+                <xs:attribute type="xs:dateTime" name="DOB"/>
+                <xs:attribute type="xs:dateTime" name="ModifyDate"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute type="xs:int" name="surveyUUID"/>
+      <xs:attribute type="xs:string" name="HeaderText"/>
+      <xs:attribute type="xs:string" name="Title"/>
+      <xs:attribute type="xs:string" name="Name"/>
+      <xs:attribute type="xs:int" name="ResultID"/>
+      <xs:attribute type="xs:string" name="ResultDate"/>
+      <xs:attribute type="xs:byte" name="TemplateType"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
