@@ -1,8 +1,3 @@
-<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html -->
-<fo:block>
-	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg">
-
-
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com"
 	xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -21,7 +16,7 @@
 			<rect fill="#04b804" stroke="#222222" stroke-width="2"
 				stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" id="GREEN_"
 				x="001" y="010"
-				width="{ 1 * (  ./Formula/FormulaResult/@Value)  /  (  @MaxValue )  }"
+				width="{ 1 * ( /Survey/Group[@GroupType='33']/Formula/FormulaResult/@Value)  /  ( /Survey/Group[@GroupType='33']/@MaxValue )  }"
 				height="30" style="color: rgb(0, 0, 0);" class="" />
 			<rect fill="#242424" stroke="#222222" stroke-width="2"
 				stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero"
@@ -33,31 +28,26 @@
 				<text x="4" y="13">
 					GREEN WIDTH
 					<xsl:value-of
-						select="  1 * (  ./Formula/FormulaResult/@Value)  /  (  @MaxValue )   " />
+						select="  1 * ( /Survey/Group[@GroupType='33']/Formula/FormulaResult/@Value)  /  ( /Survey/Group[@GroupType='33']/@MaxValue )   " />
 				</text>
 
 				<text x="476" y="60">
 					Max
-					<xsl:value-of select="./@MaxValue" />
+					<xsl:value-of select="/Survey/Group[@GroupType='33']/@MaxValue" />
 				</text>
 				<text x="0" y="60">
 					Min
-					<xsl:value-of select="./Formula/@MinValue" />
+					<xsl:value-of select="/Survey/Group[@GroupType='33']/Formula/@MinValue" />
 				</text>
 				<text x="185" y="60">
 					Cutoff
-					<xsl:value-of select="./Formula/@Threshold" />
+					<xsl:value-of select="/Survey/Group[@GroupType='33']/Formula/@Threshold" />
 				</text>
 				<text x="255" y="12">
 					<xsl:value-of
-						select="./Formula/FormulaResult/@Value" />
+						select="/Survey/Group[@GroupType='33']/Formula/FormulaResult/@Value" />
 				</text>
 			</g>
 		</svg>
 	</g>
 </svg>
-
-
-
-	</fo:instream-foreign-object>
-</fo:block>  
