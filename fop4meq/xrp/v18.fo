@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?><xsl:stylesheet version="1.0" xmlns:j4lif="http://java4less.com/fop/iform" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:j4lext="xalan://com.java4less.xreport.fop.XLSTExtension" extension-element-prefixes="j4lext j4luserext" xmlns:j4luserext="xalan://com.java4less.xreport.fop.XLSTDummyExtension"  >
+<xsl:template match="/"><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<fo:layout-master-set>
+<fo:simple-page-master master-name="master0" page-width="21.0cm" page-height="29.7cm" margin-top="1.0cm"   margin-bottom="1.0cm" margin-left="2.0cm"  margin-right="1.0cm"  > 
+  <fo:region-body  region-name="body0" margin-top="2.08cm" margin-bottom="0.3cm"  /> 
+  <fo:region-before region-name="header0" extent="2.08cm"/> 
+  <fo:region-after region-name="footer0" extent="0.3cm"/> 
+  </fo:simple-page-master>
+</fo:layout-master-set>
+<fo:page-sequence master-reference="master0">
+<fo:static-content flow-name="header0">
+<!-- c4108726ae7b4948bd13f9f1b653786b -->
+<fo:table  width="18.0cm"   >
+  <fo:table-column column-width="8.49cm"/>
+  <fo:table-column column-width="2.75cm"/>
+  <fo:table-column column-width="6.76cm"/>
+  <fo:table-body>
+    <fo:table-row    height="0.49cm"   >
+        <fo:table-cell    number-rows-spanned="3"  number-columns-spanned="1">
+      <!-- 6e5737ee55ae4b61836f309180c4d9ce -->
+      <fo:block   text-align="center"    margin-left="0.49cm" margin-right="4.11cm"  margin-top="0.0cm" ><fo:external-graphic content-width="scale-to-fit" content-height="scale-to-fit" width="3.89cm"  height="2.0cm"    ><xsl:attribute name="src"><xsl:value-of select="concat('url(data:image/;base64,',Survey/CompnayLogo/BitmapByteArray,')')"/></xsl:attribute></fo:external-graphic>
+</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-rows-spanned="2"  number-columns-spanned="1">
+      <fo:block   margin-left="1.51cm"  margin-top="0.0cm" ><fo:instream-foreign-object  content-width="1.03cm" content-height="1.0cm"  >
+<!-- 81ec193c7ef64e7fabaa3775ba824c5b -->
+<j4lbarcode xmlns="http://java4less.com/j4lbarcode/fop" mode="inline"><QRCode><CODE><xsl:value-of select="Survey/@ResultID"></xsl:value-of></CODE><CONFIGURATION>0</CONFIGURATION><TEXTFONT>null</TEXTFONT><ENCODING>AUTO</ENCODING><MARGIN>0</MARGIN><ECLEVEL>L</ECLEVEL></QRCode></j4lbarcode></fo:instream-foreign-object></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 997cf7abf81f48288986f417b02cea4e -->
+      <fo:block     margin-left="1.0cm" margin-right="0.03cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="right"><xsl:value-of select="Survey/@anschrift0DATA"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row    height="0.75cm"   >
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- bf1355a290b8421b8c488be21d4a0d4b -->
+      <fo:block     margin-left="1.25cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"   text-align="right"><xsl:value-of select="concat(/Survey/@anschrift1DATA, concat(' ', /Survey/@anschrift2DATA))"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    <fo:table-row    height="0.84cm"   >
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+<fo:block-container absolute-position="fixed" top="1.0cm" left="2.0cm" bottom="-21.02cm" >      <!-- 377f17a9c3e542878d42ca07d32c686f -->
+      <fo:block     ><fo:external-graphic    ><xsl:attribute name="src">url('data:image/auto;base64,') </xsl:attribute></fo:external-graphic>
+</fo:block>
+</fo:block-container></fo:static-content>
+<fo:static-content flow-name="footer0">
+<!-- 55add71ec04540e1b73fa726168bd095 -->
+<fo:table  width="18.0cm"   >
+  <fo:table-column column-width="18.0cm"/>
+  <fo:table-body>
+    <fo:table-row   background-color="#ffffff"  height="0.3cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="5.0cm"/>
+      <fo:table-column column-width="5.73cm"/>
+      <fo:table-column column-width="1.51cm"/>
+      <fo:table-column column-width="4.24cm"/>
+      <fo:table-column column-width="1.51cm"/>
+      <fo:table-body>
+      <fo:table-row   background-color="#ffffff"  height="0.3cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 2184f48e13104c249296b3352e9ebbd1 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.11cm"  margin-top="0.0cm"  font-size="7pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="Survey/@Title"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- a541b4ae94cd420d876d49110985be31 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="Survey/@ResultID"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 624e6b2c0bb640f8a8a33a9168abd82d -->
+      <fo:block     margin-left="0.0cm" margin-right="0.0cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="concat(/Survey/Respondent/@FirstName, concat(' ', /Survey/Respondent/@LastName))"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 34f6f08f70e44513bad2c23f2bb650d4 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.05cm"  margin-top="0.0cm"  font-size="8pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="substring(/Survey/Respondent/@DOB,0,11)"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+</fo:static-content>
+<fo:flow flow-name="body0"> 
+
+<!-- START Area Header -->
+<xsl:if test="Survey" >
+  <xsl:for-each select="Survey">
+<!-- e6de64cb77db41a7814f86c207c81678 -->
+<fo:table  width="18.0cm"  border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="18.0cm"/>
+  <fo:table-body>
+    <fo:table-row   height="0.24cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="17.27cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.24cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- d7a00f0f6d78400b9e3c6e16bb91e89f -->
+      <fo:block     margin-left="0.0cm" margin-right="11.3cm"  margin-top="0.0cm"  font-size="16pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left">Patientendaten</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   height="0.49cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="10.49cm"/>
+      <fo:table-column column-width="3.51cm"/>
+      <fo:table-column column-width="4.0cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.49cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 96d81323319546ec848f746804bff0c0 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.62cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left">Befragungsdatum:</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 6c8ac181afe44031808fe10a2e3f3863 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.57cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="@ResultDate"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   height="0.51cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="1.76cm"/>
+      <fo:table-column column-width="8.0cm"/>
+      <fo:table-column column-width="3.51cm"/>
+      <fo:table-column column-width="4.0cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.51cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- a1ddef4beba74b24bf35b8a1f7787f38 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.41cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Name:</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 624e6b2c0bb640f8a8a33a9168abd82d -->
+      <fo:block     margin-left="0.0cm" margin-right="0.16cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="concat(Respondent/@FirstName, concat(' ', Respondent/@LastName))"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- caa76228b0f24b3d9a9694724df07eaf -->
+      <fo:block     margin-left="0.0cm" margin-right="0.73cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Fallnummer: </fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 43e3c7f82771471f94d18890a71fa7aa -->
+      <fo:block     margin-left="0.0cm" margin-right="0.54cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="@fallID"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   height="0.49cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="1.76cm"/>
+      <fo:table-column column-width="8.0cm"/>
+      <fo:table-column column-width="3.51cm"/>
+      <fo:table-column column-width="4.0cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.49cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 5aa44d67f1c34919a9e82f48c15c6dbe -->
+      <fo:block     margin-left="0.0cm" margin-right="0.41cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">PID:</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 6b444229802144f0bebef29eb07cfdc0 -->
+      <fo:block     margin-left="0.0cm" margin-right="3.84cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="@surveyPID"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 4093661cd4264b88b1ca9b68849efe22 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.81cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Auftagnummer: </fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 09018330de22472fbdda691f87ca486b -->
+      <fo:block     margin-left="0.0cm" margin-right="0.49cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="/Survey/@auftragID"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   height="0.54cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="2.51cm"/>
+      <fo:table-column column-width="7.24cm"/>
+      <fo:table-column column-width="3.51cm"/>
+      <fo:table-column column-width="4.0cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.54cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- ae63985f7c444f8c96e519bedb76fccf -->
+      <fo:block     margin-left="0.0cm" margin-right="0.11cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Geburtsdatum:</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 34f6f08f70e44513bad2c23f2bb650d4 -->
+      <fo:block     margin-left="0.0cm" margin-right="4.14cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="substring(Respondent/@DOB,0,11)"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 29105db55ad24aab8b342d8e36d90a44 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.78cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Befund-ID: </fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- a541b4ae94cd420d876d49110985be31 -->
+      <fo:block     margin-left="0.0cm" margin-right="0.49cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="@ResultID"></xsl:value-of></fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail 2 -->
+<!-- ad3bdd612e9d4bd19d744c2696e30d7f -->
+<fo:table  width="18.0cm"  background-image="FOP/GREEN_PAPER_GRID.png" background-repeat="no-repeat" background-position-vertical="top" background-position-horizontal="left"   border-color="#000000" border-style="solid" border-width="thick" >
+  <fo:table-column column-width="18.0cm"/>
+  <!-- 269af614d6ea48e497afc6d2ca3fa7a8 -->
+  <fo:table-header>
+    <fo:table-row   height="0.43cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="14.0cm"/>
+      <fo:table-column column-width="2.0cm"/>
+      <fo:table-column column-width="2.0cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.43cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- a9ca23d778b94543bf99659a366a173f -->
+      <fo:block     margin-left="0.0cm" margin-right="0.65cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Ja</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 0d4addc79a6a46ef838e2bb058543bdd -->
+      <fo:block     margin-left="0.0cm" margin-right="0.65cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">Nein</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+    <fo:table-row   height="0.43cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="1.24cm"/>
+      <fo:table-column column-width="13.0cm"/>
+      <fo:table-column column-width="2.24cm"/>
+      <fo:table-column column-width="1.51cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.43cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- f3e196e79f22462f80638dfc37fe7987 -->
+      <fo:block     margin-left="0.0cm" margin-right="3.65cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="Group[@GroupID='1' and  @GroupType='31']/Formula/@Title"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+
+<!-- 46365ee6b78149c38fcfb1519d9cbb1a -->
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html --> <fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg"> 		<svg:svg height="15" width="210"> 			<svg:circle cx="5" cy="5" r="5" stroke="grey" 				stroke-width="1" fill="red" />  		</svg:svg> 	</fo:instream-foreign-object> </fo:block>          </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+
+<!-- 46365ee6b78149c38fcfb1519d9cbb1a -->
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html --> <fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg"> 		<svg:svg height="15" width="210"> 			<svg:circle cx="5" cy="5" r="5" stroke="grey" 				stroke-width="1" fill="green" />  		</svg:svg> 	</fo:instream-foreign-object> </fo:block>          </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-body>
+</fo:table>
+
+<!-- END Area Detail 2 -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail 1 -->
+<xsl:if test="Group[@GroupID='2' and  @GroupType='31']/Formula" >
+<!-- 5df3d067ca91456698dd1b97ad66eacf -->
+<fo:table  width="18.0cm"  background-image="FOP/GREEN_PAPER_GRID.png" background-repeat="no-repeat" background-position-vertical="top" background-position-horizontal="left"   border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="18.0cm"/>
+  <!-- 570df8c13c5344dea8e932381c401efe -->
+  <fo:table-header>
+    <fo:table-row   background-color="#ffffff"  height="0.24cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="13.27cm"/>
+      <fo:table-column column-width="2.0cm"/>
+      <fo:table-column column-width="2.0cm"/>
+      <fo:table-body>
+      <fo:table-row   background-color="#ffffff"  height="0.24cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 814396ee9a704175a2806d1dad0d1393 -->
+      <fo:block     margin-left="0.0cm" margin-right="1.81cm"  margin-top="0.0cm"  font-size="14pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left"><xsl:value-of select="/Survey/Group[@GroupID='2' and  @GroupType='31']/@Title"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- a9ca23d778b94543bf99659a366a173f -->
+      <fo:block     margin-left="0.0cm" margin-right="0.65cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">JA</fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 0d4addc79a6a46ef838e2bb058543bdd -->
+      <fo:block     margin-left="0.0cm" margin-right="0.65cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left">NEIN</fo:block>
+        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+    <fo:table-row   background-color="#ffffff"  height="0.19cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="18.0cm"/>
+      <fo:table-body>
+      <fo:table-row   background-color="#ffffff"  height="0.19cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="Group[@GroupID='2' and  @GroupType='31']/Formula">
+    <fo:table-row   height="0.46cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="1.49cm"/>
+      <fo:table-column column-width="12.76cm"/>
+      <fo:table-column column-width="2.24cm"/>
+      <fo:table-column column-width="1.51cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.46cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <xsl:if test="count(@Title) = 0"><fo:block/></xsl:if>      <xsl:for-each select="@Title">
+      <!-- 147cb8a3d7b64dadb9f5cf6cd2efea26 -->
+      <fo:block     margin-left="0.0cm" margin-right="3.68cm"  margin-top="0.0cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="."></xsl:value-of></fo:block>
+</xsl:for-each>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+
+<!-- 46365ee6b78149c38fcfb1519d9cbb1a -->
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html --> <fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg"> 		<svg:svg height="15" width="210"> 			<svg:circle cx="5" cy="5" r="5" stroke="grey" 				stroke-width="1" fill="red" />  		</svg:svg> 	</fo:instream-foreign-object> </fo:block>          </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+
+<!-- 46365ee6b78149c38fcfb1519d9cbb1a -->
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html --> <fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg"> 		<svg:svg height="15" width="210"> 			<svg:circle cx="5" cy="5" r="5" stroke="grey" 				stroke-width="1" fill="green" />  		</svg:svg> 	</fo:instream-foreign-object> </fo:block>          </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail 1 -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Detail -->
+<xsl:if test="Group[@GroupType='13']/Question/Answer[@Count='1']/" >
+<!-- 804f39b709fa450c8aee87c5c05a168f -->
+<fo:table  width="18.0cm"  background-image="FOP/GREEN_PAPER_GRID.png" background-repeat="no-repeat" background-position-vertical="top" background-position-horizontal="left"   border-color="#808080" border-style="double" border-width="thick" >
+  <fo:table-column column-width="18.0cm"/>
+  <!-- eadf2d5d82d3412a94069b7497d6b3d3 -->
+  <fo:table-header>
+    <fo:table-row   height="0.51cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="9.77cm"/>
+      <fo:table-column column-width="7.5cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.51cm">
+        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 2184f48e13104c249296b3352e9ebbd1 -->
+      <fo:block     margin-left="0.0cm" margin-right="4.15cm"  margin-top="0.0cm"  font-size="16pt"  font-family="SansSerif"  font-weight="bold"  color="#404040"   text-align="left"><xsl:value-of select="/Survey/@Title"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+
+<!-- 9e161d8495154a37812be5e9814a753a -->
+<fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg">    <svg    xmlns:dc="http://purl.org/dc/elements/1.1/"    xmlns:cc="http://creativecommons.org/ns#"    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"    xmlns:svg="http://www.w3.org/2000/svg"    xmlns="http://www.w3.org/2000/svg"    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"    width="70mm"    height="20mm"    viewBox="0 0 70 20"    version="1.1"    id="svg8"    inkscape:version="0.92.2 (30a58d1, 2017-08-07)"    sodipodi:docname="bubon4iki.svg">   <defs      id="defs2" />   <sodipodi:namedview      id="base"      pagecolor="#ffffff"      bordercolor="#666666"      borderopacity="1.0"      inkscape:pageopacity="0.0"      inkscape:pageshadow="2"      inkscape:zoom="3.0012217"      inkscape:cx="99.269613"      inkscape:cy="58.704585"      inkscape:document-units="mm"      inkscape:current-layer="layer1"      showgrid="false"      inkscape:window-width="1855"      inkscape:window-height="1056"      inkscape:window-x="65"      inkscape:window-y="24"      inkscape:window-maximized="1" />   <metadata      id="metadata5">     <rdf:RDF>       <cc:Work          rdf:about="">         <dc:format>image/svg+xml</dc:format>         <dc:type            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />         <dc:title />       </cc:Work>     </rdf:RDF>   </metadata>   <g      inkscape:label="Layer 1"      inkscape:groupmode="layer"      id="layer1"      transform="translate(0,-277)">     <rect        style="fill:none;stroke:#666666;stroke-width:0.23420563;stroke-miterlimit:4;stroke-dasharray:none"        id="rect4205"        width="23.325352"        height="8.4587784"        x="0.10952969"        y="277.01892" />     <path        style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:medium;line-height:normal;font-family:sans-serif;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration:none;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:normal;word-spacing:normal;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:start;white-space:normal;shape-padding:0;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;vector-effect:none;fill:#333333;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.31390575;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"        d="m 27.191674,276.92605 v 0.15625 8.45508 h 43.027343 v -8.61133 z m 0.314453,0.31445 h 42.40039 v 7.98243 h -42.40039 z"        id="rect5018"        inkscape:connector-curvature="0" />     <path        style="opacity:1;vector-effect:none;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:0.12259903px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"        d="m 19.003191,285.35709 v 3.89576 l -0.799406,-0.24348 0.840968,1.8933 0.829545,-1.87355 -0.871107,0.22373 z"        id="path5020"        inkscape:connector-curvature="0"        sodipodi:nodetypes="ccccccc" />     <path        sodipodi:nodetypes="ccccccc"        inkscape:connector-curvature="0"        id="path5022"        d="m 32.115829,285.35709 v 3.89576 l -0.799404,-0.24348 0.840967,1.8933 0.829545,-1.87355 -0.871108,0.22373 z"        style="opacity:1;vector-effect:none;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:0.12259903px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />     <path        style="opacity:1;vector-effect:none;fill:#808080;fill-opacity:1;stroke:#666666;stroke-width:0.12259903px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"        d="m 62.402343,285.35709 v 3.89576 l -0.799408,-0.24348 0.84097,1.8933 0.829543,-1.87355 -0.871105,0.22373 z"        id="path5024"        inkscape:connector-curvature="0"        sodipodi:nodetypes="ccccccc" />     <path        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.38552257;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"        d="m 10.265659,288.45666 0.0099,9.12689 z"        id="path5026"        inkscape:connector-curvature="0"        sodipodi:nodetypes="ccc" />     <path        sodipodi:nodetypes="ccc"        inkscape:connector-curvature="0"        id="path5028"        d="m 27.641166,288.45666 0.0099,9.12689 z"        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.38552257;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />     <path        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.38552257;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"        d="m 35.414421,288.45666 0.0099,9.12689 z"        id="path5030"        inkscape:connector-curvature="0"        sodipodi:nodetypes="ccc" />     <path        sodipodi:nodetypes="ccc"        inkscape:connector-curvature="0"        id="path5032"        d="m 43.225777,288.45666 0.0099,9.12689 z"        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.38552257;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />     <path        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.38552257;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"        d="m 50.960928,288.45666 0.0099,9.12689 z"        id="path5034"        inkscape:connector-curvature="0"        sodipodi:nodetypes="ccc" />     <path        sodipodi:nodetypes="ccc"        inkscape:connector-curvature="0"        id="path5036"        d="m 58.772286,288.45666 0.0099,9.12689 z"        style="opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.38552257;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />     <text        xml:space="preserve"        style="font-style:normal;font-weight:normal;font-size:3.24466777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.0811167;"        x="29.087025"        y="272.73602"        id="text5092"        transform="scale(0.97342921,1.0272961)"><tspan          sodipodi:role="line"          id="tspan5090"          x="29.087025"          y="272.73602"          style="stroke-width:0.0811167;stroke:#666666;">trifft zu und belastet mich</tspan></text>     <text        transform="scale(0.97342921,1.0272961)"        id="text5096"        y="272.67386"        x="1.9161961"        style="font-style:normal;font-weight:normal;font-size:3.24466777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.0811167;"        xml:space="preserve"><tspan          style="stroke-width:0.0811167;stroke:#666666;"          y="272.67386"          x="1.9161961"          id="tspan5094"          sodipodi:role="line">trifft nicht zu </tspan></text>     <text        xml:space="preserve"        style="font-style:normal;font-weight:normal;font-size:3.24466777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.0811167;"        x="28.773811"        y="276.15411"        id="text5100"        transform="scale(0.97342921,1.0272961)"><tspan          sodipodi:role="line"          id="tspan5098"          x="28.773811"          y="276.15411"          style="stroke-width:0.0811167;stroke:#666666;">kaum </tspan></text>     <text        transform="scale(0.97342921,1.0272961)"        id="text5104"        y="276.21622"        x="55.083313"        style="font-style:normal;font-weight:normal;font-size:3.24466777px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.0811167;"        xml:space="preserve"><tspan          style="stroke-width:0.0811167;stroke:#666666;"          y="276.21622"          x="55.083313"          id="tspan5102"          sodipodi:role="line">sehr stark </tspan></text>     <text        xml:space="preserve"        style="font-style:normal;font-weight:normal;font-size:4.4808774px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.11202194;"        x="16.256535"        y="319.07489"        id="text5184"        transform="scale(1.0785231,0.92719391)"><tspan          sodipodi:role="line"          id="tspan5182"          x="16.256535"          y="319.07489"          style="stroke-width:0.11202194;stroke:#666666;">0</tspan></text>     <text        transform="scale(1.0785231,0.92719391)"        id="text5188"        y="319.07489"        x="28.505083"        style="font-style:normal;font-weight:normal;font-size:4.4808774px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.11202194;"        xml:space="preserve"><tspan          style="stroke-width:0.11202194;stroke:#666666;"          y="319.07489"          x="28.505083"          id="tspan5186"          sodipodi:role="line">1</tspan></text>     <text        xml:space="preserve"        style="font-style:normal;font-weight:normal;font-size:4.4808774px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.11202194;"        x="35.167755"        y="319.07489"        id="text5192"        transform="scale(1.0785231,0.92719391)"><tspan          sodipodi:role="line"          id="tspan5190"          x="35.167755"          y="319.07489"          style="stroke-width:0.11202194;stroke:#666666;">2</tspan></text>     <text        transform="scale(1.0785231,0.92719391)"        id="text5196"        y="319.07489"        x="42.166924"        style="font-style:normal;font-weight:normal;font-size:4.4808774px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.11202194;"        xml:space="preserve"><tspan          style="stroke-width:0.11202194;stroke:#666666;"          y="319.07489"          x="42.166924"          id="tspan5194"          sodipodi:role="line">3</tspan></text>     <text        xml:space="preserve"        style="font-style:normal;font-weight:normal;font-size:4.4808774px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.11202194;"        x="49.031494"        y="319.07489"        id="text5200"        transform="scale(1.0785231,0.92719391)"><tspan          sodipodi:role="line"          id="tspan5198"          x="49.031494"          y="319.07489"          style="stroke-width:0.11202194;stroke:#666666;">4</tspan></text>     <text        transform="scale(1.0785231,0.92719391)"        id="text5204"        y="319.07489"        x="56.367165"        style="font-style:normal;font-weight:normal;font-size:4.4808774px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#666666;stroke-width:0.11202194;"        xml:space="preserve"><tspan          style="stroke-width:0.11202194;stroke:#666666;"          y="319.07489"          x="56.367165"          id="tspan5202"          sodipodi:role="line">5</tspan></text>     <rect        style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.07510731"        id="rect3869"        width="30.043909"        height="1.7105949"        x="32.204205"        y="284.82812" />   </g> </svg>    	</fo:instream-foreign-object> </fo:block>           </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </fo:table-header>
+  <fo:table-body>
+  <xsl:for-each select="Group[@GroupType='13']/Question/Answer[@Count='1']/">
+    <fo:table-row   height="0.49cm">
+      <fo:table-cell><fo:table>
+      <fo:table-column column-width="0.73cm"/>
+      <fo:table-column column-width="1.0cm"/>
+      <fo:table-column column-width="10.27cm"/>
+      <fo:table-column column-width="6.0cm"/>
+      <fo:table-body>
+      <fo:table-row   height="0.49cm">
+
+<!-- 2be63acf711d49069c61f8401a3d75d3 -->
+<xsl:variable name="QCounter" select="position()"> </xsl:variable>        <fo:table-cell    number-columns-spanned="1">
+        <fo:block></fo:block>        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <!-- 64452c307185428c8ae27ffeb0980d8e -->
+      <fo:block     margin-left="0.0cm" margin-right="0.24cm"  margin-top="0.18cm"  font-size="10pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="$QCounter"></xsl:value-of></fo:block>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+      <xsl:if test="count(../@Title) = 0"><fo:block/></xsl:if>      <xsl:for-each select="../@Title">
+      <!-- d019f4e3b75d49f99ff3e13721df5771 -->
+      <fo:block     margin-left="0.0cm" margin-right="1.43cm"  margin-top="0.18cm"  font-size="9pt"  font-family="SansSerif"  color="#000000"   text-align="left"><xsl:value-of select="."></xsl:value-of></fo:block>
+</xsl:for-each>
+        </fo:table-cell>
+        <fo:table-cell    number-columns-spanned="1">
+
+<!-- fc02aa8df5734e3f99e383b4a0a6e4fc -->
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html --> <fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg"> 		<svg:svg height="15" width="210"> 			<svg:circle cx="{20 + @Value  * 20 }" cy="5" r="5" stroke="grey" 				stroke-width="1" fill="black" /> 			<text x="{2 + @Value  * 20 }" y="5"  > 				1 			</text>				 			Sorry, your browser does not support inline SVG.  			<svg:rect y="0" x="0" height="32" width="1" id="rect5011" 				style="fill:#333333;stroke:#FFFFFF;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" /> 			<svg:rect y="0" x="30" height="32" width="1" id="rect5012" 				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" /> 			<svg:rect y="0" x="50" height="32" width="1" id="rect5013" 				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" /> 			<svg:rect y="0" x="70" height="32" width="1" id="rect5014" 				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" /> 			<svg:rect y="0" x="90" height="32" width="1" id="rect5015" 				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" /> 			<svg:rect y="0" x="110" height="32" width="1" id="rect5016" 				style="fill:none;stroke:#333333;stroke-width:0.29241329;stroke-miterlimit:4;stroke-dasharray:none" />  		</svg:svg> 	</fo:instream-foreign-object> </fo:block>          </fo:table-cell>
+    </fo:table-row>
+    </fo:table-body>
+    </fo:table></fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Detail -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+<fo:table-row>
+<fo:table-cell number-columns-spanned="1">
+<fo:block>
+
+<!-- START Area Footer -->
+<xsl:if test="/Survey/Group[@GroupType='33']/" >
+<!-- af3366d68f1f4937b1b072ff7ae5126b -->
+<fo:table  width="18.0cm"   border-color="#000000" border-style="solid" border-width="medium" >
+  <fo:table-column column-width="3.73cm"/>
+  <fo:table-column column-width="14.27cm"/>
+  <fo:table-body>
+  <xsl:for-each select="/Survey/Group[@GroupType='33']/">
+    <fo:table-row    background-color="#ffffff"  height="1.59cm"   >
+        <fo:table-cell    number-columns-spanned="2">
+      <!-- c1e79c3c734f4f3398c1b5c9629d5b4a -->
+      <fo:block     margin-left="0.49cm" margin-right="3.73cm"  margin-top="0.0cm"  font-size="14pt"  font-family="SansSerif"  font-weight="bold"  color="#000000"   text-align="left">Aktuelle Gesamtbelastung</fo:block>
+
+<!-- 961a6c76273e40f0b88865437caab077 -->
+<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html --> <fo:block> 	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg"> 			<xsl:variable name="w0000005" select="666" /> 			<xsl:variable name="w0000004" select="259" /> 			<xsl:variable name="w0000003" select="111" /> 			<xsl:variable name="x00000002" select="22" /> 			<xsl:variable name="x00000001" select="644" /> 			<xsl:variable name="v00000008" select="Formula/FormulaResult/@Value" /> 			  		<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com" 			xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" 			xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 			xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" 			xmlns:xsl="http://www.w3.org/1999/XSL/Transform" width="800" height="63" 			  			>   			<g transform="scale(0.700)"> 				<svg x="30" y="30"> 					<rect fill="#dadada" stroke="#222222" stroke-width="2" 						stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" 						id="GREY_BACK" x="001" y="010" width="{$w0000005}" height="30" 						style="color: rgb(0, 0, 0);" class="" /> 					<rect fill="#e84141" stroke="#222222" stroke-width="2" 						stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" 						id="RED_" x="001" y="010" width="{$w0000004}" height="30" 						style="color: rgb(0, 0, 0);" class="" /> 					<rect fill="#04b804" stroke="#222222" stroke-width="2" 						stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" 						id="GREEN_" x="001" y="010" width="{$w0000003}" height="30" 						style="color: rgb(0, 0, 0);" class="" /> 					<rect fill="#242424" stroke="#222222" stroke-width="2" 						stroke-linejoin="round" stroke-dashoffset="" fill-rule="nonzero" 						id="BLACK_VERTICAL" x="{$w0000003}" y="0" width="4" height="50" 						style="color: rgb(0, 0, 0);" /> 				</svg> 				<svg x="0" y="25"> 					<g font-family="Verdana" y="51" font-size="13"> 						<text x="4" y="13"> 							GREEN WIDTH <xsl:value-of select="(  1  + 2  )  " />   							  						</text>  						<text x="{$x00000001}" y="60"> 							Max  							<xsl:value-of select="./@MaxValue" /> 						</text> 						<text x="{$x00000002}" y="60"> 							Min <xsl:value-of select="0" />  						</text> 						<text x="{$w0000003 + 5 }" y="60"> 							Cutoff   						</text> 						<text x="{$w0000004}" y="12"> 							 <xsl:value-of select="$v00000008" />   						</text> 					</g> 				</svg> 			</g> 		</svg>    	</fo:instream-foreign-object> </fo:block>          </fo:table-cell>
+    </fo:table-row>
+  </xsl:for-each>
+  </fo:table-body>
+</fo:table>
+</xsl:if>
+
+<!-- END Area Footer -->
+</fo:block>
+</fo:table-cell>
+</fo:table-row>
+  </fo:table-body>
+</fo:table>
+  </xsl:for-each>
+</xsl:if>
+
+<!-- END Area Header -->
+<fo:block id="last-page"/></fo:flow>
+</fo:page-sequence>
+</fo:root>
+</xsl:template>
+</xsl:stylesheet>
