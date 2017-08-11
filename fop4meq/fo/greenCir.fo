@@ -1,0 +1,9 @@
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html -->
+<fo:block>
+	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg">
+		<svg:svg height="15" width="210">
+			<svg:circle cx="5" cy="5" r="5" stroke="grey"
+				stroke-width="1" fill="green" /> 
+		</svg:svg>
+	</fo:instream-foreign-object>
+</fo:block>  
