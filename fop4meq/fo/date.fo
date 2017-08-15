@@ -1,0 +1,30 @@
+	<!-- https://www.w3.org/People/maxf/papers/2002-07-SVGOpen/svgopen.html -->
+<fo:block>
+	<fo:instream-foreign-object xmlns:svg="http://www.w3.org/2000/svg">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:se="http://svg-edit.googlecode.com"
+			xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+
+xmlns:java="http://xml.apache.org/xslt/java"
+			xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+			xmlns:SimpleDateFormat="java.text.SimpleDateFormat" xmlns:Date="java.util.Date"
+			exclude-result-prefixes="SimpleDateFormat Date">
+
+
+			xmlns:xsl="http://www.w3.org/1999/XSL/Transform" width="111"
+			height="13">
+			x="0" y="1" height="125" width="210">
+			<xsl:variable name="s" select="SimpleDateFormat:new('dd.MM.yyyy ')" />
+			<xsl:variable name="dateAsString" select="2011-11-12 " />
+			<xsl:variable name="date" select="java:parse(java:java.text.SimpleDateFormat.new('yyyy-MM-dd-HH '), $dateAsString)" />
+			
+			<text x="11" y="60">
+				 <xsl:value-of select="java:parse(java:java.text.SimpleDateFormat.new('yyyy-MM-dd-HH.mm.ss.SSSSSS a'), $date )" />
+     
+			</text>
+
+
+		</svg>
+	</fo:instream-foreign-object>
+</fo:block>  
